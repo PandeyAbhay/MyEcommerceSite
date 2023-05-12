@@ -1,0 +1,42 @@
+.animated-heading {
+    animation: slideIn 1s ease-out;
+    color: aqua;
+    padding: 5px;
+    font-weight: 600;
+  }
+  .animated-headin {
+    animation: slideIn 1s ease-out;
+    color: aqua;
+   
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+
+.order img{
+    height: 300px;
+    width: 400px;
+    margin-top: 10px;
+    padding: 15px;
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    font-weight: 600;
+    
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  
+    to {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }

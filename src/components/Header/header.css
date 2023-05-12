@@ -1,0 +1,220 @@
+
+
+.header{
+    width: 100%;
+    height: 70px;
+    line-height: 70px; 
+    background-color: #595A5C;
+
+}
+
+.nunnu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.logo img{
+    width: 170px;
+    height: 50px;
+    margin-top: 10px;
+    
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    column-gap: 2.7rem;
+    margin-bottom: 0;
+}
+
+.nav__item a{
+    color: #F8983A;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nav__icons{
+    display: flex;
+    align-items: center;
+    column-gap: 1.2rem;
+}
+
+.nav__icons span i{
+    font-size: 1.4rem;
+    color: #F8983A;
+    cursor: pointer;
+}
+
+.cart_icon,
+ .fav_icon{
+    position: relative;
+}
+
+.badge{
+    position: absolutet;
+    top: 50%;
+    right: 0%;
+    width: 22px;
+    height: 22px;
+    content:  '';
+    background:rgb(255, 0, 0);
+    color: #fff;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: .7rem;
+    font-weight: 600;
+    z-index: 10;
+}
+
+.nav__icons .profile img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.nav__icons .profile{
+  position: relative;
+  z-index: 9;
+}
+
+.nav__icons .profile .profile__actions{
+  position: absolute;
+  top:98%;
+  /* left: 0; */
+  right: 0;
+  width: 150px;
+  z-index: 10;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: var(--card-bg-01);
+  line-height: 30px;
+  border-radius: 5px;
+  display: none;
+  cursor: pointer;
+}
+
+.nav__icons .profile .show__profileActions {
+  display: block;
+}
+
+.show__profileActions{
+  display: block;
+
+}
+
+.mobile__menu {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    display: none;
+  }
+
+.nav__active{
+
+    font-weight: 700 !important;
+}
+
+.sticky__header{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow:  3px 3px 8px -3px #595a5ca9 ;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:768px){
+    .navigation{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#fffefe18;
+    z-index: 9999;
+    display: none;
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 250px;
+        height: 100%;
+        background-color:#595A5C;
+        z-index: 99999;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        
+      }
+
+      .active__menu {
+        display: block;
+      }
+      .active__menu {
+        display: block;
+      }
+    
+      .mobile__menu {
+        display: block;
+      }
+    
+      .mobile__menu span i {
+        font-size: 1.1rem !important;
+      }
+    
+      .logo img {
+        width: 140px;
+        height: 50px;
+      }
+    
+      .logo h1 {
+        font-size: 1rem;
+      }
+    
+      .fav__icon i,
+      .cart__icon i {
+        font-size: 1.2rem !important;
+      }
+    
+      .nav__icons .profile img {
+        width: 1.4rem;
+        height: 1.4rem;
+      }
+    
+      .header {
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+      }
+    
+      .nav__icons .profile .show__profileActions {
+        width: 100px;
+        left: -150%;
+        padding: 5px;
+      }
+
+     
+}
